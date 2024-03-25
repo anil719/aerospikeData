@@ -93,6 +93,7 @@ public class EmployeeController {
 
     @GetMapping("/healthCheck")
     public String aeroHealthCheck(){
-        return "System is working Fine ..." ;
+        String customMessage = "aerospike";
+        return  customMessage + "System is working Fine ..." ;
     }
 }
