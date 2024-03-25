@@ -90,4 +90,9 @@ public class EmployeeController {
             System.out.println("Record not found.");
         }
     }
+
+    @GetMapping("/healthCheck")
+    public String aeroHealthCheck(){
+        return "System is working Fine ..." ;
+    }
 }
